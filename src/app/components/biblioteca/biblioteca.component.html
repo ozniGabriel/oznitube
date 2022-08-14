@@ -1,0 +1,52 @@
+<div class="wraper">
+  <div class="main">
+    <div class="historic">
+      <span>Histórico</span>
+      <ul>
+        <li *ngFor="let video of historicVideos">
+          <img src="../../../assets/images/first-videos-home/{{video.image}}" alt="">
+
+          <div class="infoVideo">
+            <h6>{{video.title}}</h6>
+            <span>{{video.chanel}}</span>
+            <span>{{video.views}} * {{video.released}}</span>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+    <div class="likedVideos">
+      <span>Marcados como gostei</span>
+      <ul>
+        <li *ngFor="let video of likedVideos">
+          <img src="../../../assets/images/first-videos-home/{{video.image}}" alt="">
+
+          <div class="infoVideo">
+            <h6>{{video.title}}</h6>
+            <span>{{video.chanel}}</span>
+            <span>{{video.views}} * {{video.released}}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+</div>
+<div class="infoProfile">
+    <img src="../../../assets/images/first-videos-home/video3.jpg" alt="">
+    <h5>Ozni Gabriel</h5>
+    <ul>
+
+        <li>
+            <span>Inscrições</span>
+            <span>10 mil</span>
+        </li>
+        <li>
+            <span>Envios</span>
+            <span>14</span>
+        </li>
+        <li>
+            <span>Marcados como gostei</span>
+            <span>904</span>
+        </li>
+    </ul>
+  </div>
+</div>

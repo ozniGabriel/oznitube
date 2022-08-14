@@ -1,0 +1,47 @@
+<div class="wraper">
+  <div class="todayVideos">
+    <span>Hoje</span>
+    <ul>
+      <li *ngFor="let video of todayVideos">
+        <img src="../../../assets/images/first-videos-home/{{video.image}}" alt="">
+        
+        <div class="infoShorts">
+          <h6>{{video.title}}</h6>
+          <span>{{video.chanel}}</span>
+          <span>{{video.views}} * {{video.released}}</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <hr>
+  <div class="yesterdayVideos">
+    <span>Ontem</span>
+    <ul>
+      <li *ngFor="let video of yesterdayVideos">
+        <img src="../../../assets/images/first-videos-home/{{video.image}}" alt="">
+
+        <div class="infoShorts">
+          <h6>{{video.title}}</h6>
+          <span>{{video.chanel}}</span>
+          <span>{{video.views}} * {{video.released}}</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <hr>
+  <div class="thisWeekVideos">
+    <span>Esta semana</span>
+    <ul>
+      <li *ngFor="let video of thisWeekVideos">
+        <img src="../../../assets/images/first-videos-home/{{video.image}}">
+        <div class="infoShorts">
+          <h6>{{video.title}}</h6>
+          <span>{{video.chanel}}</span>
+          <span>{{video.views}} * {{video.released}}</span>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</div>

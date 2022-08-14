@@ -1,0 +1,159 @@
+.wraper{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+li{
+    cursor: pointer;
+}
+
+li:hover img{
+    border: 2px orange solid;
+}
+
+span{
+    color: aliceblue;
+}
+.category, .videosEmAlta, .shortsEmAlta{
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.category ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    padding: 0;
+}
+
+
+.category li{
+    width: 135px;
+    height: 80px;
+    border:none;
+    background-color: rgb(35, 31, 31);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+}
+
+.category li:hover{
+    background-color: rgb(69, 65, 65);
+}
+
+.category span{
+    font-size: 12px;
+    font-weight: 600;
+}
+.bi{
+    font-size: 20px;
+}
+.bi-fire{
+    color: rgb(255, 21, 0);
+}
+.bi-music-note-beamed{
+    color: rgb(205, 212, 5);
+}
+.bi-film{
+    color: rgb(96, 11, 187);
+}
+.bi-broadcast-pin{
+    color: rgb(23, 241, 186);
+}
+.bi-controller{
+    color: rgb(169, 54, 12);
+}
+.bi-newspaper{
+    color: rgb(73, 123, 184);
+}
+.bi-trophy-fill{
+    color: rgb(113, 113, 138);
+}
+.bi-lightbulb-fill{
+    color: green;
+}
+.videosEmAlta{
+    width: 100%;
+}
+.videosEmAlta ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 0px;
+    width: 70%;
+}
+
+.videosEmAlta li{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    gap: 10px;
+}
+
+.videosEmAlta img{
+    width: 40%;
+    height: 168px;
+}
+
+.videosEmAlta .infoVideo{
+    width: 60%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+}
+
+.infoVideo h6{
+    color: aliceblue;
+    font-size: 14px;
+}
+.infoVideo span{
+   color: rgb(166, 159, 159);
+   font-size: 12px;
+}
+
+.shortsEmAlta ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 3px;
+}
+
+.shortsEmAlta li{
+    width: 155px;
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shortsEmAlta li h6{
+    font-size: 12px;
+    color: aliceblue;
+}
+
+.shortsEmAlta li span{
+    color: rgb(190, 182, 182);
+    font-size: 10px;
+}
+
+.shortsEmAlta img{
+     width: 150px;
+    height: 85px;
+}
+
+.infoShorts{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}

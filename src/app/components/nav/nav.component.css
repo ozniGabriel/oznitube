@@ -1,0 +1,90 @@
+header{
+    background-color: rgb(35, 31, 31);
+    color: aliceblue;
+    width: 100vw;
+    position: static;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    list-style: none;
+}
+
+.bi-list{
+    padding-right: 20px;
+    padding-left: 15px;
+    font-size: 25px;
+}
+
+.firstLiMenu, .secondLiMenu{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+}
+#form1{
+    background-color: rgb(7, 10, 9);
+    border-radius: 0%;
+    border: none;
+    padding: 10px;
+    height: 35px;
+    width: 330px;
+    color: aliceblue;
+}
+
+.bi-search{
+    background-color: rgb(71, 75, 74);
+    font-size: 12px;
+    position: relative;
+    padding: 10px;
+    height: 35px;
+    width: 50px;
+    text-align: center;
+}
+
+.bi-mic-fill{
+    background-color: rgb(24, 19, 19);
+    border-radius: 100%;
+    font-size: 15px;
+    height: 30px;
+    width: 35px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.lastLiMenu{
+    display: flex;
+    gap: 30px;
+    padding-right: 30px;
+}
+
+.nav-list li{
+    display: flex;
+    align-items: center;
+}
+
+i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+i:hover{
+    color: red;
+}
+
+h6{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+svg{
+    cursor: pointer;
+}
+

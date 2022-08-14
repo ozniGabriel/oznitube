@@ -1,0 +1,48 @@
+<div class="wraper">
+  <div class="container" *ngFor="let video of shortVideos">
+    <div class="video">
+      <div class="actionsBottomVideo">
+        <h6>Titulo do video</h6>
+        <div class="buttonsChannel">
+          <div>
+            <img src="../../../assets/images/first-videos-home/video3.jpg" alt="">
+            <h6>Nome do Canal</h6>
+          </div>
+          <button class="btn-subscribe">INSCREVER-SE</button>
+        </div>
+      </div>
+    </div>
+    <div class="actions">
+      <ul>
+        <li><i class="bi bi-hand-thumbs-up-fill"></i>
+          <span>17 mil</span>
+        </li>
+        <li><i class="bi bi-hand-thumbs-down-fill"></i>
+          <span>Não gostei</span>
+        </li>
+        <li><i class="bi bi-chat-right-text-fill"></i>
+          <span>379</span></li>
+        <li><i class="bi bi-share-fill"></i>
+          <span>Compartilhar</span></li>
+      </ul>
+    </div>
+    <div class="arrows">
+      <!--       
+        condicional pra só exibir a seta do topo caso não seja o 1º elemento do array 
+      -->
+      <i *ngIf="shortVideos.indexOf(video) != 0" class="bi bi-arrow-up-circle-fill" (click)="scrollUp()"></i>
+
+      <!-- 
+        Elemento fantasma pra não bagunçar meu Css
+        Só será exibido no primeiro elemento do array 
+      -->
+      <span *ngIf="shortVideos.indexOf(video) == 0"></span>
+
+      <!--       
+        condicional pra só exibir a seta de baixo caso não seja o último elemento do array 
+      -->
+      <i *ngIf="shortVideos.indexOf(video) != shortVideos.length - 1" class="bi bi-arrow-down-circle-fill" (click)="scrollDown()"></i>
+
+    </div>
+  </div>
+</div>

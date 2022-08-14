@@ -1,0 +1,13 @@
+.wraper{
+    position: relative;
+    width: 95vw;
+    height: 100%;
+    background-color: rgb(7, 10, 9);
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.activedMenu{
+    width: 88vw;
+}
