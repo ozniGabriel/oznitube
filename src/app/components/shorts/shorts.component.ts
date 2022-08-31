@@ -7,7 +7,9 @@ import { ReturnVideosService } from 'src/app/services/return-videos-home.service
   templateUrl: './shorts.component.html',
   styleUrls: ['./shorts.component.css']
 })
+
 export class ShortsComponent implements OnInit {
+
   shortVideos!: Array<Video>
 
   constructor(private returnVideo: ReturnVideosService) { }

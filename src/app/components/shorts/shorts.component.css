@@ -4,7 +4,6 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
-
 }
 
 .container{
@@ -109,4 +108,30 @@
 .arrows i{
     color: rgb(226, 214, 214);
     font-size: 25px;
+}
+
+/* RESPÓNSIVIDADE */
+
+@media (max-width: 550px) {
+    .container{
+        gap: 8px;
+        margin-bottom: 50px;
+    }
+
+    .video{
+        width: 350px;
+        height: 400px;
+    }
+
+    .actionsBottomVideo{
+        margin-top: 310px;
+    }
+
+    .actions ul{
+        margin-top: 170px;
+    }
+
+    .arrows{
+        display: none;
+    }
 }

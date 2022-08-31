@@ -1,6 +1,6 @@
 .wraper{
     position: relative;
-    width: 95vw;
+    width: 92vw;
     height: 100%;
     background-color: rgb(7, 10, 9);
     padding-top: 15px;
@@ -10,4 +10,12 @@
 
 .activedMenu{
     width: 88vw;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 550px){
+    .wraper{
+        width: 100vw;
+    }
 }

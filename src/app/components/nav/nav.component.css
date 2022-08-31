@@ -1,8 +1,8 @@
 header{
-    background-color: rgb(35, 31, 31);
+    background-color: rgb(26, 34, 42);
     color: aliceblue;
+    position: relative;
     width: 100vw;
-    position: static;
 }
 
 .nav-list{
@@ -11,6 +11,15 @@ header{
     align-items: center;
     padding: 8px;
     list-style: none;
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
+
+.nav-list li{
+    display: flex;
+    position: relative;
+    width: 100%;
 }
 
 .bi-list{
@@ -28,6 +37,7 @@ header{
 .input-group{
     display: flex;
     align-items: center;
+    width: 90%;
 }
 #form1{
     background-color: rgb(7, 10, 9);
@@ -35,7 +45,7 @@ header{
     border: none;
     padding: 10px;
     height: 35px;
-    width: 330px;
+    width: 80%;
     color: aliceblue;
 }
 
@@ -51,10 +61,10 @@ header{
 
 .bi-mic-fill{
     background-color: rgb(24, 19, 19);
-    border-radius: 100%;
+    border-radius: 80%;
     font-size: 15px;
     height: 30px;
-    width: 35px;
+    width: 10%;
     text-align: center;
     padding-top: 3px;
 }
@@ -63,12 +73,9 @@ header{
     display: flex;
     gap: 30px;
     padding-right: 30px;
+    justify-content: flex-end;
 }
 
-.nav-list li{
-    display: flex;
-    align-items: center;
-}
 
 i{
     font-size: 20px;
@@ -88,3 +95,22 @@ svg{
     cursor: pointer;
 }
 
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+   
+    .forHidde{
+        display: none;
+    }
+
+    .secondLiMenu .bi{
+        background-color: rgb(26, 34, 42);
+        left: 60%;
+    }
+    .lastLiMenu .bi{
+        position: relative;
+        right: 30%;
+    }
+
+}
